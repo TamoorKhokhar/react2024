@@ -1,8 +1,9 @@
 import "./App.css";
-import Home from "./components/home";
+import Home from "./components/Home";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Students from "./components/student";
+import UserInfo from "./components/userInfo";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         />
 
         <Students name="Tamoor" age="24" isStudent={false} background="gray" />
+
+        <UserInfo isLoggedIn={true} userName="Tamoor" />
         <Footer />
       </div>
     </>
