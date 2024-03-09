@@ -2,6 +2,7 @@ function Students({ background, name, age, isStudent }) {
   return (
     <>
       <div style={{ backgroundColor: background }}>
+        <h2>Props</h2>
         <h3>Student Data</h3>
         <p>Name: {name}</p>
         <p>Age: {age}</p>

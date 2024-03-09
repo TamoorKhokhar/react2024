@@ -18,7 +18,12 @@ function UserInfo({ isLoggedIn, userName }) {
     // Or
 
     isLoggedIn ? (
-      <h1>Hey {userName} you are Logged In</h1>
+      <>
+        <div style={{ backgroundColor: "yellow" }}>
+          Conditional Rendering
+          <h1>Hey {userName} you are Logged In</h1>
+        </div>
+      </>
     ) : (
       <h3>Please Log in to continue</h3>
     )
