@@ -1,11 +1,26 @@
 import "./App.css";
 import Home from "./components/Home";
+import List from "./components/List";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Students from "./components/student";
 import UserInfo from "./components/userInfo";
 
 function App() {
+  const Fruits = [
+    { name: "apple", calories: 22 },
+    { name: "banana", calories: 55 },
+    { name: "mango", calories: 100 },
+    { name: "strawberry", calories: 110 },
+    { name: "pineapple", calories: 120 },
+  ];
+  const cricketTeam = [
+    { name: "Ali", calories: 22 },
+    { name: "tamooer", calories: 55 },
+    { name: "ali ss", calories: 100 },
+    { name: "hammad", calories: 110 },
+    { name: "shaoor", calories: 120 },
+  ];
   return (
     <>
       <div>
@@ -19,6 +34,10 @@ function App() {
         <Students name="Tamoor" age="24" isStudent={false} background="gray" />
 
         <UserInfo isLoggedIn={true} userName="Tamoor" />
+
+        <List background="gray" items={Fruits} category="Fruits" />
+        <List background="gray" items={cricketTeam} category="Cricket" />
+
         <Footer />
       </div>
     </>
