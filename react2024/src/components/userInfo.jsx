@@ -7,7 +7,7 @@ function UserInfo({ isLoggedIn, userName }) {
   //     return <h2> Please Log in to continue</h2>;
   //   }
 
-  // Another option we can use ternory operator
+  // Another option we can use ternary operator
   return (
     // <h1>
     //   {isLoggedIn

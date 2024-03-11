@@ -1,10 +1,11 @@
 import "./App.css";
-import Home from "./components/Home";
+import Home from "./components/home";
 import List from "./components/List";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Students from "./components/student";
 import UserInfo from "./components/userInfo";
+import Button from "./components/button";
 
 function App() {
   const Fruits = [
@@ -25,6 +26,8 @@ function App() {
     <>
       <div>
         <Header />
+        <Button />
+
         <Home
           background="powderblue"
           question="what is component in React?"
