@@ -1,7 +1,7 @@
 function List({ background, items, category }) {
   const itemList = items;
 
-  const lowCalories = items.filter((item) => item.calories > 100);
+  const lowCalories = items.filter((item) => item.calories < 100);
   const listItems = lowCalories.map((item) => {
     return (
       <li key={item.name}>
