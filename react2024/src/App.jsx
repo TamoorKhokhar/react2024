@@ -1,11 +1,12 @@
 import "./App.css";
 import Home from "./components/home";
-import List from "./components/List";
+import List from "./components/list";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Students from "./components/student";
 import UserInfo from "./components/userInfo";
 import Button from "./components/button";
+import UseStateMyComponent from "./components/useStateMyComponent";
 
 function App() {
   const Fruits = [
@@ -26,7 +27,6 @@ function App() {
     <>
       <div>
         <Header />
-        <Button />
 
         <Home
           background="powderblue"
@@ -41,6 +41,8 @@ function App() {
         <List background="gray" items={Fruits} category="Fruits" />
         <List background="gray" items={cricketTeam} category="Cricket" />
 
+        <Button />
+        <UseStateMyComponent />
         <Footer />
       </div>
     </>
