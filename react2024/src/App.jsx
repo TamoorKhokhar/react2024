@@ -7,6 +7,7 @@ import Students from "./components/student";
 import UserInfo from "./components/userInfo";
 import Button from "./components/button";
 import UseStateMyComponent from "./components/useStateMyComponent";
+import OnChangeComponent from "./components/onChangeComponent";
 
 function App() {
   const Fruits = [
@@ -35,6 +36,7 @@ function App() {
         />
 
         <Students name="Tamoor" age="24" isStudent={false} background="gray" />
+        <Students name="Ali" age="23" isStudent={true} background="gray" />
 
         <UserInfo isLoggedIn={true} userName="Tamoor" />
 
@@ -42,7 +44,11 @@ function App() {
         <List background="gray" items={cricketTeam} category="Cricket" />
 
         <Button />
+
         <UseStateMyComponent />
+
+        <OnChangeComponent />
+
         <Footer />
       </div>
     </>

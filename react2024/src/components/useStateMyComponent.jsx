@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 function UseStateMyComponent() {
-  const [name, setName] = useState("Guest");
+  const [name, setName] = useState(false);
   const [age, setAge] = useState(0);
   const [isEmployed, setIsEmployed] = useState(false);
 
   const UpdateName = () => {
-    setName("Tamoor");
+    setName(!name);
   };
 
   const IncrementAge = () => {
@@ -24,7 +24,7 @@ function UseStateMyComponent() {
     <>
       <div style={{ backgroundColor: "yellow" }}>
         <h2>React Hook</h2>
-        <p>Name: {name}</p>
+        <p>Name: {name ? "Tamoor" : "Ali"}</p>
         <button onClick={UpdateName}>Set Name</button>
         <div style={{ padding: "2rem" }}>
           <p>Age :{age}</p>
