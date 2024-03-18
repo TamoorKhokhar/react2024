@@ -8,6 +8,7 @@ import UserInfo from "./components/userInfo";
 import Button from "./components/button";
 import UseStateMyComponent from "./components/useStateMyComponent";
 import OnChangeComponent from "./components/onChangeComponent";
+import ColorPicker from "./components/colorPicker";
 
 function App() {
   const Fruits = [
@@ -48,6 +49,8 @@ function App() {
         <UseStateMyComponent />
 
         <OnChangeComponent />
+
+        <ColorPicker />
 
         <Footer />
       </div>
