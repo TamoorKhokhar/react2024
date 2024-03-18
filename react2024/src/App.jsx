@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/home";
-import List from "./components/list";
+import List from "./components/List";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Students from "./components/student";
@@ -9,6 +9,7 @@ import Button from "./components/button";
 import UseStateMyComponent from "./components/useStateMyComponent";
 import OnChangeComponent from "./components/onChangeComponent";
 import ColorPicker from "./components/colorPicker";
+import UpdateStateFunction from "./components/updateStateFunction";
 
 function App() {
   const Fruits = [
@@ -51,6 +52,8 @@ function App() {
         <OnChangeComponent />
 
         <ColorPicker />
+
+        <UpdateStateFunction />
 
         <Footer />
       </div>
