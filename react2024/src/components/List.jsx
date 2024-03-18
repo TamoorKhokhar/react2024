@@ -9,6 +9,16 @@ function List({ background, items, category }) {
       </li>
     );
   });
+  const allListData = itemList.map((item) => {
+    return (
+      <>
+        <div key={item.name}>
+          <h2>{item.name}</h2>
+          <h2>{item.calories}</h2>
+        </div>
+      </>
+    );
+  });
 
   return (
     <>
@@ -17,16 +27,7 @@ function List({ background, items, category }) {
         <h3>{category}</h3>
         <p>
           {listItems}
-          {itemList.map((item) => {
-            return (
-              <>
-                <div key={item.name}>
-                  <h2>{item.name}</h2>
-                  <h2>{item.calories}</h2>
-                </div>
-              </>
-            );
-          })}
+          {allListData}
         </p>
       </div>
     </>
