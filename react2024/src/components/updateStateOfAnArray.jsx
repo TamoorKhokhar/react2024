@@ -52,7 +52,7 @@ function UpdateStateOfAnArray() {
         </ul>
 
         <input type="text" placeholder="Enter FRuit Name" id="fruitInput" />
-        <button onClick={AddFruit}>Add Food</button>
+        <button onClick={AddFruit}>Add Fruit</button>
       </div>
     </>
   );
