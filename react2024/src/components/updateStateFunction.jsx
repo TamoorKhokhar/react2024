@@ -3,6 +3,7 @@ import { useState } from "react";
 function UpdateStateFunction() {
   //   Updater Function : a function passed as an argument to setState() allow for the safe update based on previous state not on the current state
 
+  //   update state of an object using react
   const [carData, setCarData] = useState({
     year: 2023,
     make: "Toyota",

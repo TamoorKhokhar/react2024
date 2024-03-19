@@ -62,9 +62,12 @@ function Button() {
         <hr></hr>
         {/* OR */}
         <button style={{ backgroundColor: "ButtonFace" }} onClick={handleClick}>
-          Click Me to get cricketTeam List
+          {showTeamData
+            ? "Hide Me to hide cricketTeam List"
+            : "Click Me to get cricketTeam List"}
+          x
         </button>
-        {showTeamData && (
+        {showTeamData ? (
           <div>
             <ul>
               {cricketTeam.map((team) => {
@@ -78,7 +81,24 @@ function Button() {
               })}
             </ul>
           </div>
+        ) : (
+          ""
         )}
+        {/* {showTeamData && (
+          <div>
+            <ul>
+              {cricketTeam.map((team) => {
+                return (
+                  <li key={team.name}>
+                    <p>
+                      {team.name},{team.calories}
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )} */}
         <hr></hr>
         {/* OR */}
         <button

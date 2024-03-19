@@ -1,11 +1,11 @@
 import React from "react";
 
 function UserInfo({ isLoggedIn, userName }) {
-  //   if (isLoggedIn) {
-  //     return <h1>Hey {userName} you are Logged In</h1>;
-  //   } else {
-  //     return <h2> Please Log in to continue</h2>;
-  //   }
+  // if (isLoggedIn) {
+  //   return <h1>Hey {userName} you are Logged In</h1>;
+  // } else {
+  //   return <h2> Please Log in to continue</h2>;
+  // }
 
   // Another option we can use ternary operator
   return (
