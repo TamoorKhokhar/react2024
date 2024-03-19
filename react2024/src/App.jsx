@@ -10,6 +10,7 @@ import UseStateMyComponent from "./components/useStateMyComponent";
 import OnChangeComponent from "./components/onChangeComponent";
 import ColorPicker from "./components/colorPicker";
 import UpdateStateFunction from "./components/updateStateFunction";
+import UpdateStateOfAnArray from "./components/updateStateOfAnArray";
 
 function App() {
   const Fruits = [
@@ -38,7 +39,12 @@ function App() {
         />
 
         <Students name="Tamoor" age="24" isStudent={false} background="gray" />
-        <Students name="Ali" age="23" isStudent={true} background="gray" />
+        <Students
+          name="Ali"
+          age="23"
+          isStudent={true}
+          background="powderBlue"
+        />
 
         <UserInfo isLoggedIn={true} userName="Tamoor" />
 
@@ -54,6 +60,8 @@ function App() {
         <ColorPicker />
 
         <UpdateStateFunction />
+
+        <UpdateStateOfAnArray />
 
         <Footer />
       </div>
