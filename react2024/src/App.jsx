@@ -11,6 +11,7 @@ import OnChangeComponent from "./components/onChangeComponent";
 import ColorPicker from "./components/colorPicker";
 import UpdateStateFunction from "./components/updateStateFunction";
 import UpdateStateOfAnArray from "./components/updateStateOfAnArray";
+import UpdateStateOfanObjects from "./components/updateStateOfanObjects";
 
 function App() {
   const Fruits = [
@@ -62,6 +63,8 @@ function App() {
         <UpdateStateFunction />
 
         <UpdateStateOfAnArray />
+
+        <UpdateStateOfanObjects />
 
         <Footer />
       </div>
